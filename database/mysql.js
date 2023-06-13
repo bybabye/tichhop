@@ -1,4 +1,3 @@
-
 import mysql from 'mysql'
 import util from 'util'
 
@@ -15,15 +14,14 @@ const query = util.promisify(conn.query).bind(conn);
 
 export const executeQueryMySQL = async (q) => {
   try {
+    console.log('connect to MySQL');
     const data = await query(q);
-    console.log(data);
     // Tiếp tục với các yêu cầu kết nối khác...
+    return data;
   } catch (error) {
     console.error('Lỗi truy vấn:', error);
   } finally {
     conn.end();
+    console.log('Closed to MySQL');
   }
 };
-
-
-await executeQueryMySQL('SELECT * FROM employee');

@@ -2,9 +2,9 @@ import sql from 'mssql';
 
 
 const config = {
-  server: '35.240.162.38', // e.g. '127.0.0.1'
+  server: 'DESKTOP-9FVDQLR\\HUYBUI', // e.g. '127.0.0.1'
   port: 1433, // e.g. 1433
-  user: 'sqlserver', // e.g. 'my-db-user'
+  user: 'sa', // e.g. 'my-db-user'
   password: '123456789', // e.g. 'my-db-password'
   database: 'HR', // e.g. 'my-database'
   options: {
@@ -24,5 +24,6 @@ export const executeQuery = async query => {
 
   }finally{
     sql.close();
+    console.log('SQL SERVER CLOSE' );
   }
 }
