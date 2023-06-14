@@ -89,7 +89,7 @@ export class IntegratedModel {
       const querySQLServer = `SELECT P.Employee_ID,P.First_Name,P.Last_Name,P.Gender ,J.Job_Title,J.Salary_Type,P.Shareholder_Status,P.Ethnicity,J.Hours_per_Week
       FROM dbo.Personal P
       INNER JOIN dbo.Job_History J ON J.Employee_ID = P.Employee_ID
-      WHERE J.Hours_per_Week = 160
+      WHERE J.Hours_per_Week = 48
       `;
       // sua lai thanh 48h
       const data2 = await executeQuery(querySQLServer);
@@ -114,7 +114,7 @@ export class IntegratedModel {
       const querySQLServer = `SELECT P.Employee_ID,P.First_Name,P.Last_Name,P.Gender ,J.Job_Title,J.Salary_Type,P.Shareholder_Status,P.Ethnicity,J.Hours_per_Week
       FROM dbo.Personal P
       INNER JOIN dbo.Job_History J ON J.Employee_ID = P.Employee_ID
-      WHERE J.Hours_per_Week = 80
+      WHERE J.Hours_per_Week = 24
       `;
       // sua lai thanh 24
       const data2 = await executeQuery(querySQLServer);
@@ -201,7 +201,7 @@ export class IntegratedModel {
       SELECT P.Employee_ID,P.First_Name,P.Last_Name, J.Hours_per_Week
       FROM dbo.Personal P
       INNER JOIN dbo.Job_History J ON J.Employee_ID = P.Employee_ID
-      WHERE J.Hours_per_Week = 160
+      WHERE J.Hours_per_Week = 48
       
       `;
       const data2 = await executeQuery(querySQLServer);
@@ -220,7 +220,7 @@ export class IntegratedModel {
       SELECT P.Employee_ID,P.First_Name,P.Last_Name, J.Hours_per_Week
       FROM dbo.Personal P
       INNER JOIN dbo.Job_History J ON J.Employee_ID = P.Employee_ID
-      WHERE J.Hours_per_Week = 80
+      WHERE J.Hours_per_Week = 24
       
       `;
       const data2 = await executeQuery(querySQLServer);
