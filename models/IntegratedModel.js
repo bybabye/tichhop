@@ -178,7 +178,7 @@ export class IntegratedModel {
   }
   getVacationForEthnicity =  async (body,result) => {
     try {
-      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM \`si pay roll db\`.employee;`;
+      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM employee;`;
       const data1 = await executeQueryMySQL(queryMySQL);
       const querySQLServer = `SELECT P.Employee_ID,
       P.First_Name,P.Last_Name,P.Ethnicity
