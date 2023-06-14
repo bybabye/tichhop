@@ -127,7 +127,7 @@ export class IntegratedModel {
   };
   getVacationShareholder =  async (result) => {
     try {
-      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM \`si pay roll db\`.employee;`;
+      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM employee;`;
       const data1 = await executeQueryMySQL(queryMySQL);
       const querySQLServer = `SELECT P.Employee_ID,
       P.First_Name,P.Last_Name,P.Gender ,P.Shareholder_Status
@@ -144,7 +144,7 @@ export class IntegratedModel {
   }
   getVacationMale =  async (result) => {
     try {
-      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM \`si pay roll db\`.employee;`;
+      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM employee;`;
       const data1 = await executeQueryMySQL(queryMySQL);
       const querySQLServer = `SELECT P.Employee_ID,
       P.First_Name,P.Last_Name,P.Gender 
@@ -161,7 +161,7 @@ export class IntegratedModel {
   }
   getVacationFemale =  async (result) => {
     try {
-      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM \`si pay roll db\`.employee;`;
+      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM employee;`;
       const data1 = await executeQueryMySQL(queryMySQL);
       const querySQLServer = `SELECT P.Employee_ID,
       P.First_Name,P.Last_Name,P.Gender 
@@ -195,7 +195,7 @@ export class IntegratedModel {
   }
   getVacationEmpFullTime =  async (result) => {
     try {
-      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM \`si pay roll db\`.employee;`;
+      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM employee;`;
       const data1 = await executeQueryMySQL(queryMySQL);
       const querySQLServer = `
       SELECT P.Employee_ID,P.First_Name,P.Last_Name, J.Hours_per_Week
@@ -214,7 +214,7 @@ export class IntegratedModel {
   }
   getVacationEmpPartTime =  async (result) => {
     try {
-      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM \`si pay roll db\`.employee;`;
+      const queryMySQL = `SELECT \`Employee Number\` AS Employee_ID ,\`Vacation Days\` FROM employee;`;
       const data1 = await executeQueryMySQL(queryMySQL);
       const querySQLServer = `
       SELECT P.Employee_ID,P.First_Name,P.Last_Name, J.Hours_per_Week
