@@ -2,11 +2,10 @@ import mysql from 'mysql'
 import util from 'util'
 
 const conn = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'password',
-  database: 'si pay roll db',
-  port : '3306'
+  host: '34.30.146.8',
+  user: 'mysqldata',
+  password: '123456789',
+  database: 'payroll',
 });
 
 const query = util.promisify(conn.query).bind(conn);
@@ -19,9 +18,7 @@ export const executeQueryMySQL = async (q) => {
     // Tiếp tục với các yêu cầu kết nối khác...
     return data;
   } catch (error) {
+ 
     console.error('Lỗi truy vấn:', error);
-  } finally {
-    conn.end();
-    console.log('Closed to MySQL');
-  }
+  } 
 };

@@ -2,9 +2,9 @@ import sql from 'mssql';
 
 
 const config = {
-  server: 'DESKTOP-9FVDQLR\\HUYBUI', // e.g. '127.0.0.1'
-  port: 1433, // e.g. 1433
-  user: 'sa', // e.g. 'my-db-user'
+  server: '34.66.92.36', // e.g. '127.0.0.1'
+
+  user: 'sqlserver', // e.g. 'my-db-user'
   password: '123456789', // e.g. 'my-db-password'
   database: 'HR', // e.g. 'my-database'
   options: {

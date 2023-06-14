@@ -35,7 +35,7 @@ export const JobHistorys = {
                 salaryType : 4000,
             }
         ],
-        hoursPerWeek : 160
+        hoursPerWeek : 48
       },
       accountant : {
         jobCategory : 'Accountant',
@@ -57,7 +57,7 @@ export const JobHistorys = {
                 salaryType : 5840,
             }
         ],
-        hoursPerWeek : 160
+        hoursPerWeek : 48
       },
       developer: {
         jobCategory : 'Technique',
@@ -79,7 +79,7 @@ export const JobHistorys = {
                 salaryType : 5840,
             }
         ],
-        hoursPerWeek : 160
+        hoursPerWeek : 48
       },
       humanResources : {
         jobCategory : 'Personnel',
@@ -101,7 +101,7 @@ export const JobHistorys = {
                 salaryType : 2500,
             }
         ],
-        hoursPerWeek : 160
+        hoursPerWeek : 48
       },
       technique : {
         jobCategory : 'Technique',
@@ -124,7 +124,7 @@ export const JobHistorys = {
                 salaryType : 2500,
             }
         ],
-        hoursPerWeek : 160
+        hoursPerWeek : 48
       }
     },
     partTime : {
@@ -135,7 +135,7 @@ export const JobHistorys = {
         departmentCode : '001',
         salaryType : 12,
         payPeriod : 'Monthly',
-        hoursPerWeek : 80
+        hoursPerWeek : 24
       },
       developer: {
         jobCategory : 'Technique',
@@ -144,7 +144,7 @@ export const JobHistorys = {
         departmentCode : '003',
         salaryType : 14,
         payPeriod : 'Monthly',
-        hoursPerWeek : 80
+        hoursPerWeek : 24
       },
       humanResources : {
         jobCategory : 'Personnel',
@@ -153,7 +153,7 @@ export const JobHistorys = {
         departmentCode : '004',
         salaryType : 10,
         payPeriod : 'Monthly',
-        hoursPerWeek : 80
+        hoursPerWeek : 24
       },
     }
 }
